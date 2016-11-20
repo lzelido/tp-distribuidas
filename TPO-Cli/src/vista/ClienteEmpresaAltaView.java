@@ -1,0 +1,326 @@
+package vista;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
+
+import controlador.ClienteController;
+import dto.EmpresaDTO;
+
+
+/**
+* This code was edited or generated using CloudGarden's Jigloo
+* SWT/Swing GUI Builder, which is free for non-commercial
+* use. If Jigloo is being used commercially (ie, by a corporation,
+* company or business for any purpose whatever) then you
+* should purchase a license for each developer using Jigloo.
+* Please visit www.cloudgarden.com for details.
+* Use of Jigloo implies acceptance of these licensing terms.
+* A COMMERCIAL LICENSE HAS NOT BEEN PURCHASED FOR
+* THIS MACHINE, SO JIGLOO OR THIS CODE CANNOT BE USED
+* LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
+*/
+public class ClienteEmpresaAltaView extends javax.swing.JDialog {
+	private static final long serialVersionUID = 1L;
+	private ImageIcon picture;
+	private JLabel lblNombre;
+	private JTextField txtNombre;
+	private JTextField txtMonto;
+	private JButton btnCancelar;
+	private JButton btnAceptar;
+	private JLabel lblManifiesto;
+	private JLabel lblMontoMin;
+	private JLabel lblCtaCte;
+	private JTextField txtCtaCte;
+	private JLabel lblNroDoc;
+	private JTextField txtNroDoc;
+	private JLabel lblTipoDoc;
+	private JTextField txtTipoDoc;
+	@SuppressWarnings("rawtypes")
+	private JComboBox cboManifiesto;
+	private JLabel lblDepositoPrevio;
+	@SuppressWarnings("rawtypes")
+	private JComboBox cboDepositoPrevio;
+	private JLabel lblPagoMensual;
+	@SuppressWarnings("rawtypes")
+	private JComboBox cboPagoMensual;
+	private JTextField txtNroCte;
+	private JLabel lblNroCte;
+
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			@SuppressWarnings("unused")
+			public void run() {
+				JFrame frame = new JFrame();
+				ClienteEmpresaAltaView inst = new ClienteEmpresaAltaView();
+				inst.setVisible(true);
+			}
+		});
+	}
+	
+	public ClienteEmpresaAltaView() {
+		super();
+		initGUI();
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+	}
+	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	private void initGUI() {
+		try {
+			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			getContentPane().setLayout(null);
+			this.setTitle("Alta de Empresa");
+			picture = new ImageIcon("C:/Users/Facu/git/tpo_cliente-ad15/TPO_Cliente/picture/4.png");
+			this.setIconImage(picture.getImage());
+			{
+				lblNombre = new JLabel();
+				getContentPane().add(lblNombre);
+				lblNombre.setText("Nombre");
+				lblNombre.setBounds(12, 15, 90, 16);
+			}
+			{
+				txtNombre = new JTextField();
+				getContentPane().add(txtNombre);
+				txtNombre.setBounds(120, 12, 413, 23);
+			}
+			{
+				txtTipoDoc = new JTextField();
+				getContentPane().add(txtTipoDoc);
+				txtTipoDoc.setBounds(120, 41, 116, 23);
+			}
+			{
+				lblTipoDoc = new JLabel();
+				getContentPane().add(lblTipoDoc);
+				lblTipoDoc.setText("Tipo Documento");
+				lblTipoDoc.setBounds(12, 44, 96, 16);
+			}
+			{
+				txtNroDoc = new JTextField();
+				getContentPane().add(txtNroDoc);
+				txtNroDoc.setBounds(373, 41, 160, 23);
+			}
+			{
+				lblNroDoc = new JLabel();
+				getContentPane().add(lblNroDoc);
+				lblNroDoc.setText("Nro de Documento");
+				lblNroDoc.setBounds(248, 44, 119, 16);
+			}
+			{
+				txtNroCte = new JTextField();
+				getContentPane().add(txtNroCte);
+				txtNroCte.setBounds(120, 76, 168, 23);
+			}
+			{
+				lblNroCte = new JLabel();
+				getContentPane().add(lblNroCte);
+				lblNroCte.setText("Nro. de Corriente");
+				lblNroCte.setBounds(12, 79, 96, 16);
+			}
+			{
+				lblCtaCte = new JLabel();
+				getContentPane().add(lblCtaCte);
+				lblCtaCte.setText("Cta. Corriente");
+				lblCtaCte.setBounds(299, 79, 96, 16);
+			}
+			{
+				txtCtaCte = new JTextField();
+				getContentPane().add(txtCtaCte);
+				txtCtaCte.setBounds(407, 76, 126, 23);
+			}
+			{
+				txtMonto = new JTextField();
+				getContentPane().add(txtMonto);
+				txtMonto.setBounds(120, 105, 131, 23);
+			}
+			{
+				lblMontoMin = new JLabel();
+				getContentPane().add(lblMontoMin);
+				lblMontoMin.setText("Monto Mín. Auto.");
+				lblMontoMin.setBounds(12, 108, 108, 16);
+			}
+			{
+				lblManifiesto = new JLabel();
+				getContentPane().add(lblManifiesto);
+				lblManifiesto.setText("Req. Manifiesto");
+				lblManifiesto.setBounds(12, 144, 98, 16);
+			}
+			{
+				ComboBoxModel tipoModel = 
+						new DefaultComboBoxModel(
+								new String[] { "Si", "No" });
+				cboManifiesto = new JComboBox();
+				getContentPane().add(cboManifiesto);
+				cboManifiesto.setModel(tipoModel);
+				cboManifiesto.setBounds(120, 141, 131, 23);
+			}
+			{
+				lblDepositoPrevio = new JLabel();
+				getContentPane().add(lblDepositoPrevio);
+				lblDepositoPrevio.setText("Depósito Previo");
+				lblDepositoPrevio.setBounds(12, 179, 101, 16);
+			}
+			{
+				ComboBoxModel tipoModel = 
+						new DefaultComboBoxModel(
+								new String[] { "Si", "No" });
+				cboDepositoPrevio = new JComboBox();
+				getContentPane().add(cboDepositoPrevio);
+				cboDepositoPrevio.setModel(tipoModel);
+				cboDepositoPrevio.setBounds(120, 176, 131, 23);
+				cboDepositoPrevio.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						cboDepositoPrevio (evt);
+					}
+				});
+			}
+			{
+				lblPagoMensual = new JLabel();
+				getContentPane().add(lblPagoMensual);
+				lblPagoMensual.setText("Pago Mensual");
+				lblPagoMensual.setBounds(263, 179, 101, 16);
+			}
+			{
+				ComboBoxModel tipoModel = 
+						new DefaultComboBoxModel(
+								new String[] { "Si", "No" });
+				cboPagoMensual = new JComboBox();
+				getContentPane().add(cboPagoMensual);
+				cboPagoMensual.setModel(tipoModel);
+				cboPagoMensual.setBounds(373, 176, 160, 23);
+				cboPagoMensual.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						cboPagoMensual (evt);
+					}
+				});
+			}
+			{
+				btnAceptar = new JButton();
+				getContentPane().add(btnAceptar);
+				btnAceptar.setText("Aceptar");
+				btnAceptar.setBounds(12, 228, 108, 23);
+				btnAceptar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						btnAceptar (evt);
+					}
+				});
+			}
+			{
+				btnCancelar = new JButton();
+				getContentPane().add(btnCancelar);
+				btnCancelar.setText("Cancelar");
+				btnCancelar.setBounds(425, 228, 108, 23);
+				btnCancelar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent evt) {
+						btnCancelar (evt);
+					}
+				});
+			}
+			this.setSize(561, 300);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private void cboDepositoPrevio (ActionEvent evt){
+		if(this.cboDepositoPrevio.getSelectedItem().toString().equals("Si")){
+			this.cboPagoMensual.setSelectedItem("No");
+		}else{
+			if (this.cboDepositoPrevio.getSelectedItem().toString().equals("No")){
+				this.cboPagoMensual.setSelectedItem("Si");
+			}
+		}
+	}
+	
+	private void cboPagoMensual (ActionEvent evt){
+		if(this.cboPagoMensual.getSelectedItem().toString().equals("Si")){
+			this.cboDepositoPrevio.setSelectedItem("No");
+		}else{
+			if (this.cboPagoMensual.getSelectedItem().toString().equals("No")){
+				this.cboDepositoPrevio.setSelectedItem("Si");
+			}
+		}
+	}
+	
+	private void btnAceptar (ActionEvent evt){
+		try{
+			int response = JOptionPane.showConfirmDialog(null,"¿Esta seguro que desea continuar?\nEsta acción no puede deshacerse.", "Confirmación", JOptionPane.YES_NO_OPTION);
+			if(response == JOptionPane.NO_OPTION){
+				return;
+			}else{
+				if (response == JOptionPane.YES_OPTION){
+					EmpresaDTO empresa = new EmpresaDTO();
+					empresa.setNombre(this.txtNombre.getText());
+					empresa.setTipoDoc(this.txtTipoDoc.getText());
+					empresa.setNroDoc(this.txtNroDoc.getText());
+					empresa.setNroCuenta(this.txtNroCte.getText());
+					empresa.setCtaCte(Float.valueOf(this.txtCtaCte.getText()));
+					empresa.setMontoMinAutoriz(Float.parseFloat(this.txtMonto.getText()));
+					
+					boolean manifiesto = false;
+					if(this.cboManifiesto.getSelectedItem().toString().equals("Si"))
+						manifiesto = true;
+					empresa.setReqManifiesto(manifiesto);
+					
+					boolean deposito = false;
+					if(this.cboDepositoPrevio.getSelectedItem().toString().equals("Si"))
+						deposito = true;
+					empresa.setEsDepositoPrevio(deposito);
+					
+					boolean mensual = false;
+					if(this.cboPagoMensual.getSelectedItem().toString().equals("Si"))
+						mensual = true;
+					empresa.setEsPagoMensual(mensual);
+					
+					int check = 0;
+					check = ClienteController.getInstance().altaClienteEmpresa(empresa);
+					if (check == 2){
+						String mensaje = "Se dio de alta la nueva empresa";
+						JOptionPane.showMessageDialog(this, mensaje, "OK", JOptionPane.INFORMATION_MESSAGE);
+					}else{
+						if(check == 1){
+							String mensaje = "La empresa ya existe";
+							JOptionPane.showMessageDialog(this, mensaje, "ERROR", JOptionPane.ERROR_MESSAGE);
+						}else{
+							String mensaje = "Falla en el alta de la nueva empresa";
+							JOptionPane.showMessageDialog(this, mensaje, "ERROR", JOptionPane.ERROR_MESSAGE);
+						}
+					}
+					
+					ClienteEmpresaAltaView.this.dispose();
+//					new Principal();
+				}
+			}
+		}catch (Error e){
+			JOptionPane.showMessageDialog(this, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+		}catch (Exception e){
+			System.out.println("Mensaje Error al grabar una empresa: " + e.getMessage());
+			System.out.println("Stack Trace al grabar una empresa: " + e.getStackTrace());
+			JOptionPane.showMessageDialog(this, e, "Error", JOptionPane.ERROR_MESSAGE);
+		}
+	}
+	
+	private void btnCancelar (ActionEvent evt){
+		try{
+			ClienteEmpresaAltaView.this.dispose();
+//			new Principal();
+		}catch (Error e){
+			JOptionPane.showMessageDialog(this, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+		}catch (Exception e){
+			System.out.println("Mensaje Error al cancelar el alta de una empresa: " + e.getMessage());
+			System.out.println("Stack Trace al cancelar el alta de una empresa: " + e.getStackTrace());
+			JOptionPane.showMessageDialog(this, e, "Error", JOptionPane.ERROR_MESSAGE);
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TPO-Repo"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/javassist-3.4.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/slf4j-simple-1.5.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Microsoft JDBC Driver 4.1 for SQL Server/sqljdbc_4.1/enu/sqljdbc41.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hytech/Desktop/Lau - UADE/Aplicaciones Distribuidas/Copy of Recuparatorio_99/lib/jtds-1.2.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

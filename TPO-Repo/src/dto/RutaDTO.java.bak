@@ -1,0 +1,74 @@
+package dto;
+
+import java.io.Serializable;
+
+public class RutaDTO implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private int id;
+	private int sucursalOrigen;
+	private int sucursalDestino;
+	private String camino;
+	private float duracion;
+	private float costo;
+	private boolean esVigente;
+	
+	public RutaDTO(){
+		
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getSucursalOrigen() {
+		return sucursalOrigen;
+	}
+
+	public void setSucursalOrigen(int sucursalOrigen) {
+		this.sucursalOrigen = sucursalOrigen;
+	}
+
+	public int getSucursalDestino() {
+		return sucursalDestino;
+	}
+
+	public void setSucursalDestino(int sucursalDestino) {
+		this.sucursalDestino = sucursalDestino;
+	}
+
+	public String getCamino() {
+		return camino;
+	}
+
+	public void setCamino(String camino) {
+		this.camino = camino;
+	}
+
+	public float getCosto() {
+		return costo;
+	}
+
+	public void setCosto(float costo) {
+		this.costo = costo;
+	}
+
+	public boolean isEsVigente() {
+		return esVigente;
+	}
+
+	public void setEsVigente(boolean esVigente) {
+		this.esVigente = esVigente;
+	}
+	
+	public float getDuracion(){
+		return duracion;
+	}
+	
+	public void setDuracion(float duracion){
+		this.duracion = duracion;
+	}
+}

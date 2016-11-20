@@ -1,0 +1,67 @@
+package dto;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+public class ViajeDTO implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private Date Salida;
+	private Date llegada;
+	private List<CargaDTO> cargas;
+	private VehiculoDTO vehiculo;
+	private GPSDTO ubicacionAct;
+	private List<RemitoDTO> remitos;
+	
+	public ViajeDTO(){
+		
+	}
+
+	public Date getSalida() {
+		return Salida;
+	}
+
+	public void setSalida(Date salida) {
+		Salida = salida;
+	}
+
+	public Date getLlegada() {
+		return llegada;
+	}
+
+	public void setLlegada(Date llegada) {
+		this.llegada = llegada;
+	}
+
+	public List<CargaDTO> getCargas() {
+		return cargas;
+	}
+
+	public void setCargas(List<CargaDTO> cargas) {
+		this.cargas = cargas;
+	}
+
+	public VehiculoDTO getVehiculo() {
+		return vehiculo;
+	}
+
+	public void setVehiculo(VehiculoDTO vehiculo) {
+		this.vehiculo = vehiculo;
+	}
+
+	public GPSDTO getUbicacionAct() {
+		return ubicacionAct;
+	}
+
+	public void setUbicacionAct(GPSDTO ubicacionAct) {
+		this.ubicacionAct = ubicacionAct;
+	}
+
+	public List<RemitoDTO> getRemitos() {
+		return remitos;
+	}
+
+	public void setRemitos(List<RemitoDTO> remitos) {
+		this.remitos = remitos;
+	}
+}
