@@ -1,0 +1,5 @@
+package enums;
+
+public enum TipoSeguro {
+	TODO_RIESGO, PUERTA_A_PUERTA, RESPONSABILIDAD_CIVIL, DIFERENCIAL
+}

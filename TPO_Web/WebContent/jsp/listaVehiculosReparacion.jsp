@@ -109,7 +109,7 @@
 		</form>
 	</div>
 	<div class="col-md-12 col-lg-12" style="bottom:1px; background-color:#000; height:50px; box-shadow: -2px 3px 5px #888888; color:#fff; text-align:center">
-		<label style="margin-top:10px">Aplicaciones Distribuidas</label>
+		<label style="margin-top:10px">Aplicaciones Distribuidas 2015</label>
 	</div>
 	<script>
 		function mandarAlTaller(elemento){
